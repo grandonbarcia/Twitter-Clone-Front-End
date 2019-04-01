@@ -13,7 +13,7 @@ class Tweets extends React.Component{
     showTweets() {
 
       //Declare api url
-      const API_URL="http://localhost:5000/tweets";
+      const API_URL="https://cherry-crumble-31789.herokuapp.com/tweets";
 
       //Make fetch request to api url
       fetch(API_URL, {
@@ -60,7 +60,7 @@ class Tweets extends React.Component{
         //Return list of tweets
         return(
             <div>
-                //reverse tweets to show latest tweet first
+
                 {list.reverse()}
 
             </div>
