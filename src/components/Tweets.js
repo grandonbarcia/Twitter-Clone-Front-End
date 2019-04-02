@@ -26,12 +26,13 @@ class Tweets extends React.Component{
     }
     //clear interval
     componentDidMount() {
-      clearInterval(this.interval);
+      this.interval = setInterval(() => this.showTweets(), 1000  );
+
     }
 
     //refresh page to show tweets every 1 millisecond
     componentWillMount() {
-      this.interval = setInterval(() => this.showTweets(), 1000  );
+      clearInterval(this.interval);
     }
 
 
