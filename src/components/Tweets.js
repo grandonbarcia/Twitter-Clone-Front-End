@@ -13,7 +13,7 @@ class Tweets extends React.Component{
     showTweets() {
 
       //Declare api url
-      const API_URL="https://cherry-crumble-31789.herokuapp.com/tweets";
+      const API_URL="https://apricot-tart-74469.herokuapp.com/tweets";
 
       //Make fetch request to api url
       fetch(API_URL, {

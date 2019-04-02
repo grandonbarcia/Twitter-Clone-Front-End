@@ -8,7 +8,7 @@ class Form extends React.Component{
 
     handleSubmit(event) {
       event.preventDefault();
-      const API_URL="https://cherry-crumble-31789.herokuapp.com/tweets";
+      const API_URL="https://apricot-tart-74469.herokuapp.com/tweets";
       const data = new FormData(event.target);
       const name = data.get('name');
       const message = data.get('message');
